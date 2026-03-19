@@ -143,3 +143,20 @@ LIMIT 3, 4;
 |**Comentário de Linha (Linha inteira)**|Hashtag (`#`)|`# Instrução para obter todos os produtos`|
 |**Comentários de Múltiplas Linhas**|Barra e asterisco (`/*` e `*/`)|`/* Este comentário pode se estender por várias linhas */`|
 
+
+---
+---
+
+## Desafios
+
+1)    ```
+   SELECT cust_id FROM Customers;
+   ```
+2) ``` 
+   SELECT DISTINCT prod_id FROM OrderItems;
+   ```
+3) ```
+   SELECT * 
+	--SELECT cust_id 
+	FROM Customers
+   ```
