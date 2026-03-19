@@ -89,3 +89,27 @@ ORDER BY prod_price DESC, prod_name;
     
 - **Mix de Técnicas:** Você pode misturar nomes de colunas e posições na mesma linha, mas evite isso para manter o código legível.
     
+
+---
+---
+## Desafios
+
+1) ```
+   SELECT cust_name 
+	FROM Customers 
+	ORDER BY cust_name DESC
+   ```
+
+2) ```
+   SELECT cust_id, order_num
+	FROM Orders
+	ORDER BY cust_id, order_date DESC
+   ```
+
+3) ```
+   SELECT quantity, item_price
+	FROM OrderItems
+	ORDER BY quantity DESC, item_price DESC
+   ```
+
+4) em ORDER falta o BY, em SELECT vend_name não deve haver a vírgula
