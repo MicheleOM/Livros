@@ -1,5 +1,3 @@
-
-
 # 🔍 Lição 4: Filtrando Dados com a Cláusula WHERE
 
 Para obter apenas os dados desejados, é necessário especificar critérios de pesquisa, também conhecidos como **condições de filtro**.
@@ -28,16 +26,16 @@ _Este comando verifica se a coluna possui exatamente o valor especificado e filt
 
 O SQL suporta uma vasta gama de operadores condicionais para refinar suas buscas.
 
-|**Operador**|**Descrição**|
-|---|---|
-|`=`|Igual a|
-|`<>` ou `!=`|Diferente de|
-|`<`|Menor que|
-|`<=`|Menor ou igual a|
-|`>`|Maior que|
-|`>=`|Maior ou igual a|
-|`BETWEEN`|Entre dois valores (intervalo)|
-|`IS NULL`|É um valor nulo (vazio)|
+| **Operador** | **Descrição**                  |
+| ------------ | ------------------------------ |
+| `=`          | Igual a                        |
+| `<>` ou `!=` | Diferente de                   |
+| `<`          | Menor que                      |
+| `<=`         | Menor ou igual a               |
+| `>`          | Maior que                      |
+| `>=`         | Maior ou igual a               |
+| `BETWEEN`    | Entre dois valores (intervalo) |
+| `IS NULL`    | É um valor nulo (vazio)        |
 
 ---
 
@@ -117,36 +115,34 @@ Fique atento: ao procurar por correspondências (ex: `WHERE preco <> 10`), o SQL
 
 ---
 
-
-
 ## Desafios
 
-1) 
-   ```
-SELECT prod_id, prod_name
-FROM Products
-WHERE prod_price = 9.49
+1.  ```
+    SELECT prod_id, prod_name
+    FROM Products
+    WHERE prod_price = 9.49
 
-   ```
+    ```
 
-2) 
+2.
+
 ```
 SELECT prod_id, prod_name
 FROM Products
 WHERE prod_price >= 9
 ```
 
-3) 
-   ```
-SELECT order_num
-FROM OrderItems
-WHERE quantity >= 100
-   ```
+3.  ```
+    SELECT order_num
+    FROM OrderItems
+    WHERE quantity >= 100
+    ```
 
-4) 
+4.
+
 ```
 SELECT prod_name, prod_price
 FROM Products
 WHERE prod_price BETWEEN 3 AND 6
 ORDER BY prod_price
-   ```
+```

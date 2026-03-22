@@ -1,6 +1,4 @@
-
 ## 📚 Lição 2 - Obtenção de Dados
-
 
 ## 💻 Instrução `SELECT`
 
@@ -94,11 +92,11 @@ FROM Products;
 
 A instrução `SELECT` por padrão retorna todas as linhas correspondentes da tabela especificada. Se você quiser ou precisar apenas de um número específico de linhas, é possível fazer isso dependendo do SGBD que está sendo usado:
 
-|**SGBD**|**Sintaxe para as Primeiras X Linhas**|**Exemplo (Primeiras 5)**|
-|---|---|---|
-|**Microsoft SQL Server**|`TOP X`|`SELECT TOP 5 prod_name FROM Products;`|
-|**DB2**|`FETCH FIRST X ROWS ONLY`|`SELECT prod_name FROM Products FETCH FIRST 5 ROWS ONLY;`|
-|**MySQL, MariaDB, PostgreSQL, SQLite**|`LIMIT X`|`SELECT prod_name FROM Products LIMIT 5;`|
+| **SGBD**                               | **Sintaxe para as Primeiras X Linhas** | **Exemplo (Primeiras 5)**                                 |
+| -------------------------------------- | -------------------------------------- | --------------------------------------------------------- |
+| **Microsoft SQL Server**               | `TOP X`                                | `SELECT TOP 5 prod_name FROM Products;`                   |
+| **DB2**                                | `FETCH FIRST X ROWS ONLY`              | `SELECT prod_name FROM Products FETCH FIRST 5 ROWS ONLY;` |
+| **MySQL, MariaDB, PostgreSQL, SQLite** | `LIMIT X`                              | `SELECT prod_name FROM Products LIMIT 5;`                 |
 
 #### Obtendo Linhas com Início e Quantidade Específicos
 
@@ -128,7 +126,7 @@ SQL
 -- Equivalente a LIMIT 4 OFFSET 3 (Começa na 4ª linha, obtém 3 linhas)
 SELECT prod_name
 FROM Products
-LIMIT 3, 4; 
+LIMIT 3, 4;
 ```
 
 ---
@@ -137,26 +135,29 @@ LIMIT 3, 4;
 
 É possível comentar em SQL para documentar o código:
 
-|**Tipo de Comentário**|**Sintaxe**|**Exemplo**|
-|---|---|---|
-|**Comentário de Linha (Após escrita)**|Duplo hífen (`--`)|`SELECT prod_name -- Obtém o nome do produto`|
-|**Comentário de Linha (Linha inteira)**|Hashtag (`#`)|`# Instrução para obter todos os produtos`|
-|**Comentários de Múltiplas Linhas**|Barra e asterisco (`/*` e `*/`)|`/* Este comentário pode se estender por várias linhas */`|
-
+| **Tipo de Comentário**                  | **Sintaxe**                     | **Exemplo**                                                |
+| --------------------------------------- | ------------------------------- | ---------------------------------------------------------- |
+| **Comentário de Linha (Após escrita)**  | Duplo hífen (`--`)              | `SELECT prod_name -- Obtém o nome do produto`              |
+| **Comentário de Linha (Linha inteira)** | Hashtag (`#`)                   | `# Instrução para obter todos os produtos`                 |
+| **Comentários de Múltiplas Linhas**     | Barra e asterisco (`/*` e `*/`) | `/* Este comentário pode se estender por várias linhas */` |
 
 ---
+
 ---
 
 ## Desafios
 
-1)    ```
-   SELECT cust_id FROM Customers;
-   ```
-2) ``` 
-   SELECT DISTINCT prod_id FROM OrderItems;
-   ```
-3) ```
-   SELECT * 
-	--SELECT cust_id 
-	FROM Customers
+1.  ```
+    SELECT cust_id FROM Customers;
+    ```
+
+````
+2) ```
+SELECT DISTINCT prod_id FROM OrderItems;
+````
+
+3. ```
+   SELECT *
+   --SELECT cust_id
+   FROM Customers
    ```
